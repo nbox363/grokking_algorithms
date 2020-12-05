@@ -1,4 +1,4 @@
-def choise_sort_1(seq):
+def choise_sort(seq):
     """Функция производит сортировку методом вставки"""
     for pos in range(0, len(seq)-1):
         for i in range(pos+1, len(seq)):
@@ -21,7 +21,7 @@ def find_smallest(seq):
     return smallest_index
 
 
-def choise_sort_2(seq):
+def selection_sort(seq):
     """Функция производит сортировку методом вставки"""
     res = []
     for i in range(len(seq)):
