@@ -19,3 +19,17 @@ def quick_sort(seq):
     for x in L+M+R:
         seq[k] = x
         k += 1
+
+
+def quicksort(seq):
+    if len(seq) < 2:
+        return seq
+    else:
+        barier = seq[0]
+        less = [i for i in seq[1:] if i <= barier]
+        greater = [i for i in seq[1:] if i > barier]
+
+        return quicksort(less) + [barier] + quicksort(greater)
+
+
+print(quicksort([10, 5, 3, 2]))
