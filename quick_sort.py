@@ -30,6 +30,3 @@ def quicksort(seq):
         greater = [i for i in seq[1:] if i > barier]
 
         return quicksort(less) + [barier] + quicksort(greater)
-
-
-print(quicksort([10, 5, 3, 2]))
